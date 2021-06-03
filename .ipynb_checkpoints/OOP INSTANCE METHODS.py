@@ -18,8 +18,13 @@ class Student:
         self.a = a
         self.b = b
 
-@classmethod
-def into(cls):
-    return cls.name
+# @classmethod
+# def into(cls):
+#     return cls.name
 
+# print(Student.info())
+
+@staticmethod
+def info():
+    return "This is a static method"
 print(Student.info())
